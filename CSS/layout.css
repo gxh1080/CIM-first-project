@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Reset some default browser styles */
 * {
@@ -35,7 +36,7 @@ nav {
 nav ul {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     justify-items: center;
     margin: 0;
@@ -113,6 +114,10 @@ h2{
 .grid2 .item img {
     display: block;
     margin: 0 auto;
+    /* Make thumbnails square while preserving cover behavior */
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .grid2 .item p {
@@ -124,4 +129,24 @@ footer {
     width: 960px;
     margin: 0 auto; 
     text-align: center;
+}
+
+/* Make images used elsewhere square as well */
+.images img,
+.story-media img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+/* Utility classes to control square thumbnail size (max-width). Use these on the <img> or on its container */
+.square-sm { max-width: 100px; }
+.square-md { max-width: 180px; }
+.square-lg { max-width: 260px; }
+
+@media (max-width: 800px) {
+    /* On mobile, keep squares but allow them to fill the column */
+    .grid2 .item img, .images img, .story-media img { width: 100%; }
+    .square-sm, .square-md, .square-lg { max-width: 100%; }
 }
