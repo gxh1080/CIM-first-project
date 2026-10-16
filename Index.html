@@ -3,84 +3,153 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wiki Example</title>
-        <link rel="stylesheet" href="CSS/layout.css">
+        <meta name="author" content="Gabriela Hau">
+        <meta name="keywords" content="children's story, tiger, monkey, elephant, friendship, teamwork, jungle, wiki">
+        <meta name="description" content="A Wikipedia-style encyclopedia entry about the children's story The Tiger, the Monkey, and the Elephant, a tale of friendship and teamwork.">
+        <title>The Tiger, the Monkey, and the Elephant - JungleWiki</title>
+        <link rel="stylesheet" href="css/layout.css">
     </head>
-
     <body>
+        <!-- Site header: logo, title, and search bar styled like Wikipedia -->
         <header>
-            <h1>Wiki</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="grid.html" target="_blank" rel="noopener">Grid examples</a></li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <h1>JungleWiki</h1>
+                <p class="tagline">The Free Storybook Encyclopedia</p>
+            </div>
+            <form class="search" action="#" role="search">
+                <input type="search" placeholder="Search JungleWiki" aria-label="Search JungleWiki">
+                <button type="submit">Search</button>
+            </form>
         </header>
 
-        <main>
-            <section id="home">
-                <h2>Home</h2>
-                <p>This is the home section of the website. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque exercitationem voluptatum vitae aliquam in voluptatibus, porro possimus non adipisci doloribus quam veniam alias optio? Quasi aut at modi culpa asperiores.</p>
-            </section>
+        <div class="page">
+            <!-- Table of contents sidebar -->
+            <nav class="toc">
+                <h2>Contents</h2>
+                <ul>
+                    <li><a href="#top">(Top)</a></li>
+                    <li><a href="#plot">Plot</a></li>
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#themes">Themes</a></li>
+                    <li><a href="#reception">Reception</a></li>
+                    <li><a href="#see-also">See also</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </nav>
 
-            <section id="about">
-                <h2>About</h2>
-                <p>This is the about section of the website. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ut voluptate dolore rem sint, repellat unde, blanditiis quasi provident nesciunt nemo illo aspernatur nulla perspiciatis quidem corporis odit corrupti autem?</p>
-            </section>
+            <main>
+                <article id="top">
+                    <h2 class="article-title">The Tiger, the Monkey, and the Elephant</h2>
+                    <p class="from">From JungleWiki, the free storybook encyclopedia</p>
+                    <p class="hatnote"><em>This article is about the children's story. For the real animals, see <a href="https://en.wikipedia.org/wiki/Tiger" target="_blank">Tiger</a>, <a href="https://en.wikipedia.org/wiki/Monkey" target="_blank">Monkey</a>, and <a href="https://en.wikipedia.org/wiki/Elephant" target="_blank">Elephant</a>.</em></p>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>This is the contact section of the website. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis odio necessitatibus, praesentium nobis a obcaecati corporis in repellat optio esse molestiae cum excepturi magnam deserunt pariatur officia illo provident dolorem.</p>
-            </section>
+                    <!-- Infobox, like the box on the right side of a Wikipedia page -->
+                    <aside class="infobox">
+                        <h3>The Tiger, the Monkey, and the Elephant</h3>
+                        <img src="images/jungle.jpg" alt="A big green jungle with tall trees">
+                        <p class="caption">The jungle where the story takes place</p>
+                        <table>
+                            <tr><th>Genre</th><td>Children's fable</td></tr>
+                            <tr><th>Setting</th><td>A big green jungle</td></tr>
+                            <tr><th>Main characters</th><td>Tommy, Max, Ellie</td></tr>
+                            <tr><th>Theme</th><td>Friendship and teamwork</td></tr>
+                            <tr><th>Moral</th><td>Working together makes everything better</td></tr>
+                            <tr><th>Ending</th><td>Happy 🌴💛</td></tr>
+                        </table>
+                    </aside>
 
-            <section class="grid1">
-                <h2>Columns</h2>
-                <div class="grid1-inner">
-                    <div>
-                        <h3>Column 1</h3>
-                        <p>This is the column 1 section of the website.</p>
-                    </div>
-                    <div>
-                        <h3>Column 2</h3>
-                        <p>This is the column 2 section of the website.</p>
-                    </div>
-                    <div>
-                        <h3>Column 3</h3>
-                        <p>This is the column 3 section of the website.</p>
-                    </div>
-                </div>
-            </section>
+                    <p><strong>The Tiger, the Monkey, and the Elephant</strong> is a short children's story about three animal friends who live in a big green jungle: a tiger named <strong>Tommy</strong>, a monkey named <strong>Max</strong>, and an elephant named <strong>Ellie</strong>. The story follows the friends as they rescue Max from a tall tree, and it teaches young readers that <mark>working together makes everything better</mark>.</p>
+                    <p>The story is known for its simple language, its cheerful characters, and its clear lesson about friendship. It is often read aloud to young children and is a popular choice for teaching <em>cooperation</em> and <em>kindness</em>.</p>
 
-            <section class="grid2">
-                <h2>Gallery</h2>
-                <div class="item">
-                    <img src="images/monkey.png" alt="monkey" class="square-md">
-                    <p>This is the monkey who was originally scared of the lion.</p>
-                </div>
-                <div class="item">
-                    <img src="images/lion.png" alt="lion" class="square-md">
-                    <p>This is the lion who wanted to eat the monkey.</p>
-                </div>
-                <div class="item">
-                    <img src="images/hunters.png" alt="hunters" class="square-md">
-                    <p>These are the hunters who were going to harm the animals.</p>
-                </div>
-            </section>
+                    <section id="plot">
+                        <h2>Plot</h2>
 
-            <!-- Embed grid.html for quick preview (responsive) -->
-            <section id="grid-embed">
-                <h2>Grid examples preview</h2>
-                <div class="iframe-wrap">
-                    <iframe src="grid.html" title="Grid examples" loading="lazy"></iframe>
-                </div>
-            </section>
-        </main>
+                        <h3>Background</h3>
+                        <p>Tommy, Max, and Ellie are best friends who love playing together every day. Each friend has a special trait: Tommy is strong, Max is silly, and Ellie is very kind.</p>
+
+                        <h3>The rescue</h3>
+                        <p>The main events of the story happen in this order:</p>
+                        <ol>
+                            <li>One sunny morning, Max climbs a tall tree to find some delicious bananas.</li>
+                            <li>Max gets stuck on a high branch and shouts, <q>Help! I can't get down!</q></li>
+                            <li>Tommy tries to climb the tree, but he is too heavy.</li>
+                            <li>Ellie tries to reach Max with her trunk, but the branch is too high.</li>
+                            <li>Ellie has an idea: she stands next to the tree, and Tommy carefully climbs onto her back.</li>
+                            <li>Max reaches down, grabs Tommy's paw, and with one big pull, he is safe.</li>
+                        </ol>
+
+                        <h3>Ending</h3>
+                        <p>After the rescue, the three friends sit under the tree and share the bananas. Tommy says the job was much easier when they worked together, Max laughs that it was also much more fun, and Ellie smiles and says, <q>That's what friends are for!</q> From that day on, the friends always help one another.</p>
+                    </section>
+
+                    <section id="characters">
+                        <h2>Characters</h2>
+
+                        <div class="gallery">
+                            <figure>
+                                <img src="images/tiger.jpg" alt="Tommy the tiger">
+                                <figcaption>Tommy the tiger</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/monkey.jpg" alt="Max the monkey">
+                                <figcaption>Max the monkey</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/elephant.jpg" alt="Ellie the elephant">
+                                <figcaption>Ellie the elephant</figcaption>
+                            </figure>
+                        </div>
+
+                        <h3>Tommy the Tiger</h3>
+                        <p>Tommy is the <strong>strongest</strong> of the three friends. Even though he is strong, he learns that strength alone is not enough to solve every problem.</p>
+
+                        <h3>Max the Monkey</h3>
+                        <p>Max is the silly, playful member of the group. His love of bananas is what starts the adventure when he gets stuck in the tree.</p>
+
+                        <h3>Ellie the Elephant</h3>
+                        <p>Ellie is the kindest of the friends and the one who comes up with the plan that saves Max.</p>
+                    </section>
+
+                    <section id="themes">
+                        <h2>Themes</h2>
+                        <p>The story explores several themes that are common in children's literature:</p>
+                        <ul>
+                            <li><strong>Teamwork</strong> – No single friend can save Max alone, but together they succeed.</li>
+                            <li><strong>Friendship</strong> – The characters care about each other and celebrate together.</li>
+                            <li><strong>Problem solving</strong> – When the first tries fail, the friends think of a new idea.</li>
+                            <li><strong>Sharing</strong> – The story ends with the friends sharing the bananas.</li>
+                        </ul>
+
+                        <h4>Moral of the story</h4>
+                        <blockquote>Working together makes everything better.</blockquote>
+                    </section>
+
+                    <section id="reception">
+                        <h2>Reception</h2>
+                        <p>Readers enjoy the story for its fun animal characters and its happy ending. Parents and teachers often use it to start conversations with children about helping others and using each person's strengths as a team.</p>
+                    </section>
+
+                    <section id="see-also">
+                        <h2>See also</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Fable" target="_blank">Fable</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Children%27s_literature" target="_blank">Children's literature</a></li>
+                        </ul>
+                    </section>
+
+                    <section id="references">
+                        <h2>References</h2>
+                        <ol class="refs">
+                            <li><cite>The Tiger, the Monkey, and the Elephant</cite>, children's story.</li>
+                        </ol>
+                    </section>
+                </article>
+            </main>
+        </div>
 
         <footer>
-            <p>&copy; 2025 My Website</p>
+            <p>This page was last edited on <time datetime="2026-10-16">October 16, 2026</time>.</p>
+            <p>&copy; 2026 Gabriela Hau. Text is available for educational use.</p>
         </footer>
     </body>
 </html>
